@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registreringsskjema</title>
+
+    </head>
+    <body>
+        <header>
+            <a href="hovedmal.html">Hovedmal for min nettside</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HJEM</a></li>
+                    <li><a href="validering.html">VALIDERINGSOPPGAVE</a></li>
+                    <li><a href="hovedmal.html">HOVEDMAL</a></li>
+                    <li><a href="contact.html">KONTAKT MEG</a></li>
+                   
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Registrer deg her!</h2>
+                <form method="post">
+                    <label for="Navn">Navn:</label>
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" required>
+                    <label>
+                        E-post: 
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label for="pass">Passord (Minimum 8 tegn):</label>
+                    <input type="password" id="pass" name="password" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])_(?=.*[A-Z]).{8,}" required
+                    <label for="Alder">Alder</label>
+                    <input type="tall" name="number" min="18" max="99" required
+                    
+                   
+
+
+                </form>
+            </section>
+        </main>
+        <footer> 
+            <p>Kontakt meg på e-post:</p>
+            <p><a href="mailto:eminak@hiof.no">eminak@hiof.no</a></p>
+            <p>2024 Emina Karahasan</p>
+          </footer>
+    </body>
+  
+
+
+</html>
