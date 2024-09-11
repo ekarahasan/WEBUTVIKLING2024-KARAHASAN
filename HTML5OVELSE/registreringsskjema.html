@@ -30,14 +30,33 @@
                         E-post: 
                         <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     </label>
-                    <label for="pass">Passord (Minimum 8 tegn):</label>
-                    <input type="password" id="pass" name="password" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])_(?=.*[A-Z]).{8,}" required
+                    <label for="pass">Passord:</label>
+                    <input type="password" id="pass" name="password" placeholder="Minimum 8 tegn" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])_(?=.*[A-Z]).{8,}" required
                     <label for="Alder">Alder</label>
                     <input type="tall" name="number" min="18" max="99" required
-                    
-                   
+                    <label for="Kjønn">Kvinne</label>
+                    <input type="radio" name="valg">
+                    <label for="Kjønn">Mann</label>
+                   <input type="radio" name="valg">
+                   <label for="Kjønn">Annet</label>
+                   <input type="radio" name="valg">
+
+                   <label>
+                    Land
+                    <select name="fav"
+                    <option value="Sverige">Sverige</option>
+                    <option value="Danmark">Danmark</option>
+                    <option value="Finnland">Finnland</option>
+                    <option value="Norge">Norge</option>
+                    <Option value="Annet">Annet</Option>
+                   </label>
+                   <label>
+                    Personvern
+                    <input type="checkbox" id="Godta" name="vilkår" value="godkjenning">
+                   </label>
 
 
+                    <input type="submit" value="Send">
                 </form>
             </section>
         </main>
