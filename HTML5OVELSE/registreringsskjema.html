@@ -34,6 +34,10 @@
                     <input type="password" id="pass" name="password" placeholder="Minimum 8 tegn" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])_(?=.*[A-Z]).{8,}" required
                     <label for="Alder">Alder</label>
                     <input type="tall" name="number" min="18" max="99" required
+                    <label for="phone">Telefonnummer:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" required>
+                    <label for="birthday">Fødselsdato</label>
+                    <input type="date" id="birthday" name="birthday" max="2023-12-31" required>
                     <label for="Kjønn">Kvinne</label>
                     <input type="radio" name="valg">
                     <label for="Kjønn">Mann</label>
@@ -43,17 +47,17 @@
 
                    <label>
                     Land
-                    <select name="fav"
+                    <select name="land" id="land" required>
                     <option value="Sverige">Sverige</option>
                     <option value="Danmark">Danmark</option>
                     <option value="Finnland">Finnland</option>
                     <option value="Norge">Norge</option>
                     <Option value="Annet">Annet</Option>
                    </label>
-                   <label>
-                    Personvern
-                    <input type="checkbox" id="Godta" name="vilkår" value="godkjenning">
-                   </label>
+                    </select>
+                    <label for="personvern">Personvern</label>
+                    <input type="checkbox" id="personvern" name="personvern" required>
+                
 
 
                     <input type="submit" value="Send">
