@@ -1,0 +1,59 @@
+main{
+    background-image: url('../sprites/bakgrunn.jpg');
+    background-size: contain;
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+@keyframes runningMario {
+    from{background-image: url('../sprites/staa.png');}
+    to{background-image: url('../sprites/lopende.png');}
+}
+
+@keyframes movingMario{
+    0%{
+        left: 0;
+        bottom: 53px;
+    }
+
+    23%{
+        left: 200px;
+    }
+
+}
+
+@keyframes running Gompa{
+    from{background-image: url('../sprites/sopp.png');}
+    to{background-image: url('../sprites/sopp-kopi.png');}
+}
+
+
+#supermario{
+    /* background-image: url('../sprites/staa.png');*/
+    background-size: contain;
+    heigth: 50px;
+    width: 50px;
+    position:absolute;
+    bottom:53px;
+    animation-name: runningMario, movingMario;
+    animation-iteration-count: infinite, 1;
+    animation-duration: 0.5s, 3s;
+}
+
+#gompa{
+    /* background-image: url('../sprites/sopp.png');*/
+    background-size: contain;
+    heigth: 50px;
+    width: 50px;
+    position:absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: runningGompa;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
