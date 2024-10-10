@@ -36,7 +36,6 @@ body{
 main{
     grid-column-start: 2;
     grid-column-end:3;
-
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -128,4 +127,46 @@ img{
       width: 100%;
       box-shadow: 13px 9px 20px 8px #efefef;
       padding: 1 rem;
+  }
+
+  /*DESKTOP*/
+  @media only screen and (min-width: 800px) {
+    .fa-burger {
+        display: none;
+    }
+    #menu{
+        display: flex !important;
+    }
+  }
+
+  /*MOBIL*/
+  @media only screen and (max-width: 800p) {
+    #menu {
+        display: none;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header, main, aside, footer {
+        grid-column: 1/2;
+    }
+
+    header {
+        grid-row: 1/2;
+    }
+
+    main {
+        grid-row: 2/3;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        grid-row: 3/4;
+    }
   }
